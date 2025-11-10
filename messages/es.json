@@ -1,0 +1,92 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar...",
+    "filter": "Filtrar",
+    "actions": "Acciones",
+    "signOut": "Cerrar Sesión",
+    "systemManager": "Administrador del Sistema",
+    "adminPortal": "Portal de Administración",
+    "user": "Usuario",
+    "notifications": "Notificaciones",
+    "messages": "Mensajes",
+    "userMenu": "Menú de usuario",
+    "toggleSidebar": "Alternar barra lateral",
+    "closeMenu": "Cerrar menú",
+    "openMenu": "Abrir menú"
+  },
+  "auth": {
+    "signIn": "Iniciar Sesión",
+    "signOut": "Cerrar Sesión",
+    "tenant": "Tenant",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "tenantPlaceholder": "Ingresa el nombre del tenant",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "passwordPlaceholder": "••••••••",
+    "signInToAccount": "Inicia sesión en tu cuenta",
+    "adminPortal": "Direct Store Delivery",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "rememberMe": "Recordarme",
+    "dontHaveAccount": "¿No tienes una cuenta?",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "signingIn": "Iniciando sesión...",
+    "redirecting": "Redirigiendo..."
+  },
+  "validation": {
+    "tenantRequired": "El tenant es requerido",
+    "emailRequired": "El correo electrónico es requerido",
+    "emailInvalid": "Dirección de correo electrónico inválida",
+    "passwordRequired": "La contraseña es requerida",
+    "passwordMinLength": "La contraseña debe tener al menos {min} caracteres",
+    "fieldRequired": "Este campo es requerido"
+  },
+  "errors": {
+    "unexpectedError": "Ocurrió un error inesperado. Por favor intenta de nuevo.",
+    "authenticationFailed": "Error de autenticación",
+    "invalidCredentials": "Correo electrónico o contraseña inválidos",
+    "sessionExpired": "Tu sesión ha expirado. Por favor inicia sesión nuevamente.",
+    "unauthorized": "Acceso no autorizado",
+    "serverError": "Error del servidor. Por favor intenta más tarde.",
+    "noTenant": "Tu cuenta no está asociada con ningún tenant. Por favor contacta a tu administrador.",
+    "invalidTenantName": "Nombre de tenant inválido. Por favor verifica el nombre del tenant e intenta de nuevo.",
+    "tenantNameRequired": "El nombre del tenant es requerido. Por favor ingresa el nombre de tu tenant."
+  },
+  "dashboard": {
+    "title": "Panel de Control",
+    "welcome": "Bienvenido al Panel de Control",
+    "content": "El contenido de tu panel de control va aquí.",
+    "header": "Panel de Control"
+  },
+  "admin": {
+    "welcome": "Panel de Administración",
+    "description": "Bienvenido al panel de administración. Gestiona inquilinos y configuraciones del sistema desde aquí.",
+    "tenants": "Inquilinos",
+    "addTenant": "Agregar Inquilino",
+    "tenantsDescription": "Gestiona todos los inquilinos desde esta página. Crea, edita y desactiva inquilinos."
+  },
+  "navigation": {
+    "home": "Inicio",
+    "dashboard": "Panel de Control",
+    "tenants": "Inquilinos",
+    "users": "Usuarios",
+    "settings": "Configuración",
+    "reports": "Reportes",
+    "analytics": "Analíticas"
+  },
+  "metadata": {
+    "title": "Direct Store Delivery",
+    "description": "Portal de administración de Direct Store Delivery"
+  }
+}
+

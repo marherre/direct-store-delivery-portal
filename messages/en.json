@@ -1,0 +1,92 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "searchPlaceholder": "Search...",
+    "filter": "Filter",
+    "actions": "Actions",
+    "signOut": "Sign Out",
+    "systemManager": "System Manager",
+    "adminPortal": "Admin Portal",
+    "user": "User",
+    "notifications": "Notifications",
+    "messages": "Messages",
+    "userMenu": "User menu",
+    "toggleSidebar": "Toggle sidebar",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "tenant": "Tenant",
+    "email": "Email",
+    "password": "Password",
+    "tenantPlaceholder": "Enter tenant name",
+    "emailPlaceholder": "you@example.com",
+    "passwordPlaceholder": "••••••••",
+    "signInToAccount": "Sign in to your account",
+    "adminPortal": "Direct Store Delivery",
+    "forgotPassword": "Forgot password?",
+    "rememberMe": "Remember me",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "signingIn": "Signing in...",
+    "redirecting": "Redirecting..."
+  },
+  "validation": {
+    "tenantRequired": "Tenant is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email address",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "Password must be at least {min} characters",
+    "fieldRequired": "This field is required"
+  },
+  "errors": {
+    "unexpectedError": "An unexpected error occurred. Please try again.",
+    "authenticationFailed": "Authentication failed",
+    "invalidCredentials": "Invalid email or password",
+    "sessionExpired": "Your session has expired. Please sign in again.",
+    "unauthorized": "Unauthorized access",
+    "serverError": "Server error. Please try again later.",
+    "noTenant": "Your account is not associated with any tenant. Please contact your administrator.",
+    "invalidTenantName": "Invalid tenant name. Please check your tenant name and try again.",
+    "tenantNameRequired": "Tenant name is required. Please enter your tenant name."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome to Dashboard",
+    "content": "Your dashboard content goes here.",
+    "header": "Dashboard"
+  },
+  "admin": {
+    "welcome": "Admin Dashboard",
+    "description": "Welcome to the admin panel. Manage tenants and system settings from here.",
+    "tenants": "Tenants",
+    "addTenant": "Add Tenant",
+    "tenantsDescription": "Manage all tenants from this page. Create, edit, and deactivate tenants."
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "tenants": "Tenants",
+    "users": "Users",
+    "settings": "Settings",
+    "reports": "Reports",
+    "analytics": "Analytics"
+  },
+  "metadata": {
+    "title": "Direct Store Delivery",
+    "description": "Direct Store Delivery administration portal"
+  }
+}
+
