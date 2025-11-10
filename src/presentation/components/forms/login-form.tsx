@@ -106,85 +106,51 @@ export const LoginForm: React.FC = () => {
   };
 
   return (
-    <>
-      {/* Loading Overlay */}
-      {isLoading && (
-        <div className="fixed inset-0 bg-gradient-to-br from-blue-50/95 via-white/95 to-blue-100/95 backdrop-blur-md z-50 flex items-center justify-center">
-          <div className="text-center px-6">
-            <div className="inline-flex items-center justify-center w-24 h-24 rounded-3xl bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 mb-6 shadow-2xl shadow-blue-500/50 relative">
-              {/* Spinning ring */}
-              <div className="absolute inset-0 rounded-3xl border-4 border-blue-300/30 border-t-blue-200 animate-spin"></div>
-              {/* Cart icon */}
-              <svg
-                className="w-12 h-12 text-white relative z-10"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              </svg>
-            </div>
-            <p className="text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-2">
-              {t('signingIn')}
-            </p>
-            <p className="text-sm text-gray-600 font-medium animate-pulse">
-              {t('redirecting')}
-            </p>
-          </div>
+    <form onSubmit={handleSubmit(onSubmit, onError)} className="space-y-4">
+      {error && (
+        <div className="rounded-lg bg-red-50 border border-red-200 p-3">
+          <p className="text-sm text-red-700">{error}</p>
         </div>
       )}
 
-      <form onSubmit={handleSubmit(onSubmit, onError)} className="space-y-6">
-        {error && (
-          <div className="rounded-xl bg-red-50/80 backdrop-blur-sm border-2 border-red-200 p-4 shadow-sm">
-            <p className="text-sm text-red-700 font-semibold">{error}</p>
-          </div>
-        )}
-
-        <div className="space-y-5">
-          <Input
-            label={t('tenant')}
-            type="text"
-            placeholder={t('tenantPlaceholder')}
-            {...register('tenant')}
-            error={errors.tenant?.message}
-            disabled={isLoading}
-          />
-
-          <Input
-            label={t('email')}
-            type="email"
-            placeholder={t('emailPlaceholder')}
-            {...register('email')}
-            error={errors.email?.message}
-            disabled={isLoading}
-          />
-
-          <Input
-            label={t('password')}
-            type="password"
-            placeholder={t('passwordPlaceholder')}
-            {...register('password')}
-            error={errors.password?.message}
-            disabled={isLoading}
-          />
-        </div>
-
-        <Button
-          type="submit"
-          className="w-full mt-8"
-          isLoading={isLoading}
+      <div className="space-y-3">
+        <Input
+          label={t('tenant')}
+          type="text"
+          placeholder={t('tenantPlaceholder')}
+          {...register('tenant')}
+          error={errors.tenant?.message}
           disabled={isLoading}
-        >
-          {t('signIn')}
-        </Button>
-      </form>
-    </>
+        />
+
+        <Input
+          label={t('email')}
+          type="email"
+          placeholder={t('emailPlaceholder')}
+          {...register('email')}
+          error={errors.email?.message}
+          disabled={isLoading}
+        />
+
+        <Input
+          label={t('password')}
+          type="password"
+          placeholder={t('passwordPlaceholder')}
+          {...register('password')}
+          error={errors.password?.message}
+          disabled={isLoading}
+        />
+      </div>
+
+      <Button
+        type="submit"
+        className="w-full"
+        isLoading={isLoading}
+        disabled={isLoading}
+      >
+        {t('signIn')}
+      </Button>
+    </form>
   );
 };
 

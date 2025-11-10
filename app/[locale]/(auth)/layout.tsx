@@ -79,18 +79,12 @@ export default async function AuthLayout({
         </svg>
       </div>
       
-      <div className="max-w-md w-full relative z-10">
-        <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl border-2 border-orange-400/60 p-8 sm:p-10 relative overflow-hidden">
-          {/* Animated border glow */}
-          <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-orange-50/60 via-transparent to-orange-100/40 pointer-events-none animate-border-glow"></div>
-          
-          {/* Inner glow effect with orange */}
-          <div className="absolute -inset-1 bg-gradient-to-r from-orange-400/20 via-orange-500/20 to-orange-400/20 rounded-3xl blur-xl opacity-50 animate-pulse-slow -z-10"></div>
-          
-          <div className="text-center mb-8 relative z-10">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 mb-5 shadow-lg shadow-blue-500/40 transform hover:scale-110 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/50">
+      <div className="max-w-sm w-full relative z-10">
+        <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-orange-200/50 p-6 relative overflow-hidden">
+          <div className="text-center mb-6 relative z-10">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 mb-3 shadow-md">
               <svg
-                className="w-10 h-10 text-white"
+                className="w-7 h-7 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -103,10 +97,10 @@ export default async function AuthLayout({
                 />
               </svg>
             </div>
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 bg-clip-text text-transparent mb-2 animate-gradient-text">
+            <h2 className="text-2xl font-bold text-blue-700 mb-1">
               {t('adminPortal')}
             </h2>
-            <p className="text-sm text-gray-600 font-medium">
+            <p className="text-xs text-gray-600">
               {t('signInToAccount')}
             </p>
           </div>

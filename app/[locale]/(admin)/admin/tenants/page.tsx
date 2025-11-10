@@ -2,13 +2,14 @@ import { getTranslations } from 'next-intl/server';
 import { GetTenantsUseCase } from '@/domain/use-cases/tenant/get-tenants.use-case';
 import { SupabaseTenantRepository } from '@/infrastructure/repositories/supabase-tenant.repository';
 import { TenantMapper } from '@/application/mappers/tenant.mapper';
+import { TenantDTO } from '@/application/dtos/tenant.dto';
 
 export default async function TenantsPage() {
   const t = await getTranslations('admin');
   const tCommon = await getTranslations('common');
 
   // Get tenants using the use case
-  let tenants = [];
+  let tenants: TenantDTO[] = [];
   let error: string | null = null;
 
   try {
