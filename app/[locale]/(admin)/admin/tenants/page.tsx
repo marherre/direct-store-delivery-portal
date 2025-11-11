@@ -4,6 +4,9 @@ import { SupabaseTenantRepository } from '@/infrastructure/repositories/supabase
 import { TenantMapper } from '@/application/mappers/tenant.mapper';
 import { TenantDTO } from '@/application/dtos/tenant.dto';
 
+// Force dynamic rendering - this page requires runtime data from Supabase
+export const dynamic = 'force-dynamic';
+
 export default async function TenantsPage() {
   const t = await getTranslations('admin');
   const tCommon = await getTranslations('common');
